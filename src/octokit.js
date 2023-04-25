@@ -1,9 +1,6 @@
 const { Octokit } = require('@octokit/rest');
-const { readFileSync } = require('fs');
 
-const json = JSON.parse(readFileSync('./create.json'));
-
-const token = json['token'];
+const token = process.env.TOKEN;
 if (!token) {
   console.log('Need token!');
   return false;

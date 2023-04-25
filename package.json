@@ -17,9 +17,9 @@
   "license": "MIT",
   "author": "xrkffgg",
   "scripts": {
-    "create": "yarn && node ./src/create.js",
-    "delete": "yarn && node ./src/delete.js",
-    "copy": "yarn && node ./src/copy.js",
+    "start": "npm run delete && npm run copy",
+    "delete": "node -r dotenv/config ./src/delete.js  dotenv_config_path=.env.local",
+    "copy": "node -r dotenv/config ./src/copy.js dotenv_config_path=.env.local",
     "format": "prettier --write **/*.js",
     "format-check": "prettier --check **/*.js",
     "all": "npm run format-check"
@@ -31,6 +31,7 @@
   "devDependencies": {
     "@umijs/fabric": "^2.5.6",
     "axios": "^0.21.1",
+    "dotenv": "^16.0.3",
     "prettier": "^2.2.1"
   }
 }

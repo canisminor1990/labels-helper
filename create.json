@@ -1,13 +1,4 @@
 {
-  "get-owner": "ant-design",
-  "get-repo": "ant-design",
-  "target-owner": "actions-cool",
-  "target-repo": "create-labels",
-  "token": "",
-  "// token": "The token should have target-repo write access.",
-  "path": "components/",
-  "ignore": "col, row, version, index.tsx",
-  "format": "Components: $name",
-  "desc": "This is default $name",
-  "color": "auto"
+  "get-owner": "canisminor1990",
+  "get-repo": "canisminor-template"
 }

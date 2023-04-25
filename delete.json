@@ -1,9 +1,5 @@
 {
-  "target-owner": "actions-cool",
-  "target-repo": "create-labels",
-  "token": "",
-  "// token": "The token should have target-repo write access.",
-  "ignore": "Components: test1, Components: test2",
-  "include": "Components",
-  "// include": "The test contains, if it is empty, all will be deleted. Remember"
+  "target-owner": "canisminor1990",
+  "target-repo": "target-repo",
+  "ignore": ""
 }

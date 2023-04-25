@@ -5,11 +5,12 @@ const { queryLabels, createLabel } = require('./octokit');
 async function run() {
   try {
     const json = JSON.parse(readFileSync('./create.json'));
+    const jsonTarget = JSON.parse(readFileSync('./delete.json'));
 
     const getOwner = json['get-owner'];
     const getRepo = json['get-repo'];
-    const targetOwner = json['target-owner'];
-    const targetRepo = json['target-repo'];
+    const targetOwner = jsonTarget['target-owner'];
+    const targetRepo = jsonTarget['target-repo'];
     const ignore = json['ignore'];
 
     const getLabels = await queryLabels(getOwner, getRepo);
